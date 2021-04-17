@@ -66,3 +66,10 @@ public:
 #ifdef _DEBUG
 	void debug();
 #endif
+
+	
+	
+	float Vbatt();
+	/**
+	 * Reads battery voltage.
+	 */
