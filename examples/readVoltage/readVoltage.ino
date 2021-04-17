@@ -8,7 +8,6 @@ SW6115 battery = SW6115(SW6115_ADDR);
 void setup() {
     Wire.begin();
     Serial.begin(115200);
-    battery.init();
 }
 
 void loop() {
