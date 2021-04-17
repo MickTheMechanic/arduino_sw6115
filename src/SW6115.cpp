@@ -22,4 +22,3 @@ float SW6115::readVoltage()
         return (((r15 << 8) | r14) & 0xFFF) * 0.0012;
 }
 
-#endif
