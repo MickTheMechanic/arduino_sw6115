@@ -14,6 +14,6 @@ void setup() {
 void loop() {
   float vBatt;
   vBatt = battery.readVoltage();
-  Serial.println(vBatt);
+  Serial.println(vBatt,4);
   delay(1000);
 }
