@@ -5,12 +5,12 @@
 
 enum class SW6115Register : uint8_t
 {
-	BG_CTRL		        = 0x01,			///< 2.1. REG 0x01: BG Control
-	KEY_EVENT_CTRL		= 0x03,			///< 2.2. REG 0x03: Key Event Ctrl
-	IQR_PEND_1      	= 0x05,			///< 2.3. REG 0x05: IRQ Pending1
-	IQR_PEND_2      	= 0x06,			///< 2.4. REG 0x06: IRQ Pending2
-  IQR_PEND_3      	= 0x07,			///< 2.5. REG 0x07: IRQ Pending3
-  IQR_PEND_4      	= 0x08,			///< 2.6. REG 0x06: IRQ Pending4
+  BG_CTRL           = 0x01,	///< 2.1. REG 0x01: BG Control
+  KEY_EVENT_CTRL    = 0x03,	///< 2.2. REG 0x03: Key Event Ctrl
+  IQR_PEND_1        = 0x05,	///< 2.3. REG 0x05: IRQ Pending1
+  IQR_PEND_2        = 0x06,	///< 2.4. REG 0x06: IRQ Pending2
+  IQR_PEND_3        = 0x07,	///< 2.5. REG 0x07: IRQ Pending3
+  IQR_PEND_4        = 0x08,	///< 2.6. REG 0x06: IRQ Pending4
   IQR_EN            = 0x09,     ///< 2.7. REG 0x09: IRQ Enable
   MASKBITS_1        = 0x0A,     ///< 2.8. REG 0x0A: IRQ Maskbits1
   MASKBITS_2        = 0x0B,     ///< 2.9. REG 0x0B: IRQ Maskbits2
