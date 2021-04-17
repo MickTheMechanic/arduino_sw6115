@@ -69,7 +69,7 @@ public:
 
 	
 	
-	float Vbatt();
+	float readVoltage();
 	/**
 	 * Reads battery voltage.
 	 */
