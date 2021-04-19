@@ -50,6 +50,26 @@ float SW6115::readIchrg()
 	_bus->endTransmission();
 	_bus->requestFrom(_deviceAddr, (uint8_t)1);
         uint8_t r18 = _bus->read();
-        return (((r18 << 8) | r17) & 0xFFF) * 25/7;
+        return ((((r18>>4) << 8) | r17) & 0xFFF) * 25/7;
 	//ICharge = ((Reg0x18[3:0]<<8)+ Reg0x17[7:0])*25/7 mA
+}
+float SW6115::readIdischg()
+{
+	_bus->beginTransmission(_deviceAddr);
+	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_IDATA_3));
+	_bus->endTransmission();
+	_bus->requestFrom(_deviceAddr, (uint8_t)1);
+	uint8_t r19 = _bus->read();
+        _bus->beginTransmission(_deviceAddr);
+	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_IDATA_2));
+	_bus->endTransmission();
+	_bus->requestFrom(_deviceAddr, (uint8_t)1);
+        uint8_t r18 = _bus->read();
+	_bus->beginTransmission(_deviceAddr);
+	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_IDATA_3));
+	_bus->endTransmission();
+	_bus->requestFrom(_deviceAddr, (uint8_t)1);
+	uint8_t r19 = _bus->read();
+        return ((((r18>>4) << 8) | r19) & 0xFFF) * 25/7;
+	//IDischarge = ((Reg0x18[7:4]<<8)+ Reg0x19[7:0])*25/7 mA
 }
