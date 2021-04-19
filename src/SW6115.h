@@ -1,7 +1,7 @@
 // Another rediculously good mod by Mick ;)
 // MIT licence
 // This code is provided as is
-// I'm not rosponsible or liable if stuff breaks or people die as a result of my shitty code
+// I'm not responsible or liable if stuff breaks or people die as a result of my shitty code
 
 #pragma once
 
