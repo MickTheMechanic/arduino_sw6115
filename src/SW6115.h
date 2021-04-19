@@ -69,8 +69,16 @@ public:
 
 	
 	
-	float readVoltage();
+	float readVbatt();
 	/**
-	 * Reads battery voltage.
+	 * Reads battery voltage (mV).
+	 */
+	float readVout();
+	/**
+	 * Reads output voltage(mV).
+	 */
+	float readIchrg();
+	/**
+	 * Reads charging current(mA).
 	 */
 };
