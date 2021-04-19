@@ -81,4 +81,9 @@ public:
 	/**
 	 * Reads charging current(mA).
 	 */
+	float SW6115::readIdischg()
+	/**
+	 * Reads discharge current(mA).
+	 */
+	
 };
