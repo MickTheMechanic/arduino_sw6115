@@ -1,5 +1,5 @@
 # arduino_sw6115
-An i2c library to control the sw6115 chip found on lithium battery shields
+An i2c library to control the sw6115 chip found on DIY-More lithium battery shields
 
 ## This is open-source, feel free to help out!
 There is still a bunch of untapped potential in this chip. I have only written code for the basic stuff.
