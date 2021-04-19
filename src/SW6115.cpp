@@ -10,12 +10,12 @@ SW6115::~SW6115() {}
 float SW6115::readVoltage()
 {
 	_bus->beginTransmission(_deviceAddr);
-	_bus->write(SW6115Register::ADC_VDATA_1);
+	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_VDATA_1));
 	_bus->endTransmission();
 	_bus->requestFrom(_deviceAddr, (uint8_t)1);
 	uint8_t r14 = _bus->read();
         _bus->beginTransmission(_deviceAddr);
-	_bus->write(SW6115Register::ADC_VDATA_2);
+	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_VDATA_2));
 	_bus->endTransmission();
 	_bus->requestFrom(_deviceAddr, (uint8_t)1);
         uint8_t r15 = _bus->read();
