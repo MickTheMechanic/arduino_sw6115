@@ -55,11 +55,6 @@ float SW6115::readIchrg()
 }
 float SW6115::readIdischg()
 {
-	_bus->beginTransmission(_deviceAddr);
-	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_IDATA_3));
-	_bus->endTransmission();
-	_bus->requestFrom(_deviceAddr, (uint8_t)1);
-	uint8_t r19 = _bus->read();
         _bus->beginTransmission(_deviceAddr);
 	_bus->write(static_cast<uint8_t>(SW6115Register::ADC_IDATA_2));
 	_bus->endTransmission();
