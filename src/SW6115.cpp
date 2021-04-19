@@ -1,7 +1,7 @@
 // Another rediculously good mod by Mick ;)
 // MIT licence
-// Provided as is
-// I'm not rosponsible or liable if stuff breaks or people die
+// This code is provided as is
+// I'm not responsible or liable if stuff breaks or people die as a result of my shitty code
 
 #include "SW6115.h"
 
