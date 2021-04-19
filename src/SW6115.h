@@ -1,3 +1,8 @@
+// Another rediculously good mod by Mick ;)
+// MIT licence
+// This code is provided as is
+// I'm not rosponsible or liable if stuff breaks or people die as a result of my shitty code
+
 #pragma once
 
 #include <Arduino.h>
@@ -66,24 +71,39 @@ public:
 #ifdef _DEBUG
 	void debug();
 #endif
-
-	
-	
 	float readVbatt();
 	/**
 	 * Reads battery voltage (mV).
 	 */
+
 	float readVout();
 	/**
-	 * Reads output voltage(mV).
+	 * Reads output voltage (mV).
 	 */
+
 	float readIchrg();
 	/**
-	 * Reads charging current(mA).
+	 * Reads charging current (mA).
 	 */
-	float SW6115::readIdischg()
+
+	float readIdischrg();
 	/**
-	 * Reads discharge current(mA).
+	 * Reads discharge current (mA).
+	 */
+	
+	float readTic();
+	/**
+	 * Reads IC temperature (°C).
+	 */
+	
+	float readVntc();
+	/**
+	 * Reads NTC voltage (mV).
+	 */
+	
+	void powerOff();
+	/**
+	 * Switches off battery-shield.
 	 */
 	
 };
