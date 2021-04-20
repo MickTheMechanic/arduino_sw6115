@@ -12,7 +12,14 @@ SW6115::SW6115(uint8_t address, TwoWire& bus) {
 
 SW6115::~SW6115() {}
 
-uint8_t SW6115::readRegister(MCP23017Register reg)
+
+
+bool SW6115::begin()
+{
+	Wire.begin(); 
+}
+
+uint8_t SW6115::readRegister(SW6115Register reg)
 {
 	_bus->beginTransmission(_deviceAddr);
 	_bus->write(static_cast<uint8_t>(reg));
