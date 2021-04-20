@@ -16,8 +16,7 @@
 #include <Wire.h>
 
 
-#define SW6115_ADDR 0x3C
-SW6115 battery = SW6115(SW6115_ADDR);
+SW6115 battery = SW6115();
 
 uint8_t numChars = 50;
 uint8_t count    = 0;
