@@ -71,6 +71,11 @@ public:
 #ifdef _DEBUG
 	void debug();
 #endif
+	bool begin();
+	/**
+	 * Initialize I²C.
+	 */
+	
 	float readVbatt();
 	/**
 	 * Reads battery voltage (mV).
