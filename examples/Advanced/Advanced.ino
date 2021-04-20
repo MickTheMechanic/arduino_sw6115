@@ -16,14 +16,14 @@
 #include <Wire.h>
 
 
-SW6115 battery = SW6115();
+SW6115 battery;
 
 uint8_t numChars = 50;
 uint8_t count    = 0;
 
 
 void setup() {
-  Wire.begin();
+  battery.begin();
   Serial.begin(115200);
 }
 
