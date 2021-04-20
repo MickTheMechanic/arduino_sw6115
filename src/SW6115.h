@@ -61,7 +61,7 @@ class SW6115
 {
 private:
 	TwoWire* _bus;
-	uint8_t _deviceAddr;
+	const uint8_t _deviceAddr = 0x3C;
 public:
 	/**
 	 * Instantiates a new instance to interact with a SW6115 at the specified address.
