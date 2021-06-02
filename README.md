@@ -30,6 +30,9 @@ There is still a bunch of untapped potential in this chip. I have only written c
 
 # Connections
 ## This applies to DIY-More battery-shield V9, and battery-shield V8
+Don't forget to add pull-up resistors! (Anywhere between 4.7k and 10k should be fine)
+
+https://rheingoldheavy.com/i2c-pull-resistors/
 
 <a href="https://ibb.co/0FJssXV"><img src="https://i.ibb.co/fn0DDSG/Screenshot-23.png" alt="Screenshot-23" border="0"></a>
 
